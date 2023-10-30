@@ -20,7 +20,7 @@ const publicRoutes = [
     { path: '/admin/order', component: Order },
     { path: '/admin/product', component: Product },
     { path: '/admin/category', component: Category },
-
+    //fkjdkjfdkfe
     //User
     { path: '/', component: HomeUser, layout: DefaultLayoutUser },
 ];
