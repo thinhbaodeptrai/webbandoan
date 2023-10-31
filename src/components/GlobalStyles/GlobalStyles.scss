@@ -29,7 +29,9 @@ input::-webkit-input-placeholder {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
-
+a {
+    text-decoration: none;
+}
 .btn-primary {
     min-width: 160px;
     font-size: 18px;
