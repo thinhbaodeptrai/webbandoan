@@ -66,39 +66,6 @@ function HomeUser() {
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img
-                            src="https://cdn.hoanghamobile.com/i/preview/Uploads/2023/08/17/a1405va-km095w-1.png"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img
-                            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-green_AV1_GEO_US_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=1692810693508"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img
-                            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink_AV1_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=1692810696360"
-                            className="d-block w-100"
-                            alt="..."
-                        />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
                 </div>
                 <button
                     className="carousel-control-prev"

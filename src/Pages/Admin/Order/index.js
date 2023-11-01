@@ -221,8 +221,8 @@ function Order() {
                         </div>
                     </div>
                     <div class={cx('modal-footer')}>
-                        <button class={cx('btn-primary', 'btn-close')}>Thoát</button>
-                        <button class={cx('btn-primary', 'btn-confirm')}>Xác Nhận</button>
+                        <button class={cx('btn-primary-m', 'btn-close')}>Thoát</button>
+                        <button class={cx('btn-primary-m', 'btn-confirm')}>Xác Nhận</button>
                     </div>
                 </div>
             </div>

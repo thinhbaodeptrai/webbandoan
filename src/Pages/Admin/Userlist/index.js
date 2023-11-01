@@ -42,9 +42,9 @@ function Userlist() {
                             </svg>
                         </button>
                     </div>
-                    <button onClick={handldeAddUser} className={cx('content-header-btn')}>
+                    {/* <button onClick={handldeAddUser} className={cx('content-header-btn')}>
                         Thêm mới
-                    </button>
+                    </button> */}
                 </div>
                 <div className={cx('list-content-body')}>
                     <table className={cx('list-content-table')}>
@@ -259,10 +259,10 @@ function Userlist() {
                         </div>
                     </div>
                     <div className={cx('modal-footer')}>
-                        <button onClick={handleCloseModal} className={cx('btn-primary', 'btn-close')}>
+                        <button onClick={handleCloseModal} className={cx('btn-primary-m', 'btn-close')}>
                             Thoát
                         </button>
-                        <button className={cx('btn-primary', 'btn-confirm')}>Xác Nhận</button>
+                        <button className={cx('btn-primary-m', 'btn-confirm')}>Xác Nhận</button>
                     </div>
                 </div>
             </div>

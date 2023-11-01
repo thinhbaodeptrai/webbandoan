@@ -234,6 +234,20 @@ function Product() {
                             </div>
                             <div className={cx('modal-body-item')}>
                                 <h5 className={cx('modal-body-item-title')}>
+                                    Loại Sản Phẩm<span style={{ color: 'red' }}>*</span>
+                                </h5>
+                                <select className={cx('select-category')} name="cars" id="cars">
+                                    <optgroup label="Swedish Cars">
+                                        <option value="">Loại 1</option>
+                                        <option value="">Loại 2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div className={cx('modal-body-item')}>
+                                <h5 className={cx('modal-body-item-title')}>
                                     Giá Tiền<span style={{ color: 'red' }}>*</span>
                                 </h5>
                                 <input className={cx('item-input-text')} type="text" placeholder="Nhập giá tiền" />
@@ -247,8 +261,8 @@ function Product() {
                         </div>
                     </div>
                     <div onClick={handleCloseModal} className={cx('modal-footer')}>
-                        <button className={cx('btn-primary', 'btn-close')}>Thoát</button>
-                        <button className={cx('btn-primary', 'btn-confirm')}>Xác Nhận</button>
+                        <button className={cx('btn-primary-m', 'btn-close')}>Thoát</button>
+                        <button className={cx('btn-primary-m', 'btn-confirm')}>Xác Nhận</button>
                     </div>
                 </div>
             </div>
