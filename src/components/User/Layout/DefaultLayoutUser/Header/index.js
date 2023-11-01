@@ -1,9 +1,20 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import image from '@/assets/images';
+import { useRef } from 'react';
 
 function Header() {
     const cx = classNames.bind(styles);
+
+    const modalRegister = useRef();
+
+    const handleRegister = () => {
+        modalRegister.current.style.display = 'flex';
+    };
+
+    const handleCloseRegister = () => {
+        modalRegister.current.style.display = 'none';
+    };
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
@@ -40,7 +51,7 @@ function Header() {
                     <a href="" className={cx('header-final-login')}>
                         Đăng nhập
                     </a>
-                    <a href="" className={cx('header-final-login')}>
+                    <a onClick={handleRegister} className={cx('header-final-login')}>
                         Đăng Kí
                     </a>
                 </div>
@@ -58,9 +69,39 @@ function Header() {
                                 </li>
                                 <li className={cx('header-noti-item')}>
                                     <a className={cx('header-noti-link')}>Đăng xuất</a>
-                                </li>{' '}
+                                </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div ref={modalRegister} className={cx('modal-register')}>
+                <div className={cx('modal-overlay')}></div>
+                <div className={cx('modal-body')}>
+                    <div className={cx('modal-body-header')}>
+                        <h1 className={cx('modal-body-header-title')}>Đăng Kí</h1>
+                        <div onClick={handleCloseRegister} className={cx('modal-body-header-icon')}>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
+                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div className={cx('modal-body-content')}>
+                        <div className={cx('modal-body-content-item')}>
+                            <input type="text" placeholder="Tên đăng nhập" />
+                        </div>
+                        <div className={cx('modal-body-content-item')}>
+                            <input type="text" placeholder="Email" />
+                        </div>
+                        <div className={cx('modal-body-content-item')}>
+                            <input type="password" placeholder="Mật khẩu" />
+                        </div>
+                        <div className={cx('modal-body-content-item')}>
+                            <input type="password" placeholder="Nhập lại mật khẩu" />
+                        </div>
+                    </div>
+                    <div className={cx('modal-body-content-footer')}>
+                        <button className={cx('btn-primary-m')}>Đăng Kí</button>
                     </div>
                 </div>
             </div>
