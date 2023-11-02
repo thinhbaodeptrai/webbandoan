@@ -1,7 +1,13 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
     width: 100vw;
     height: 44px;
-    background: rgba(251, 251, 253, 0.8);
+    // background: rgba(251, 251, 253, 0.8);
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +114,10 @@
     color: #000;
     cursor: pointer;
 }
-
+.header-final-search {
+    margin: 0 10px;
+    cursor: pointer;
+}
 // header-register modal
 
 .modal-body {
@@ -161,5 +170,47 @@
     button {
         color: #333;
         border-radius: 15px;
+    }
+}
+
+.modal-search {
+    display: none;
+    // display: flex;
+    width: 85%;
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    top: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 7px 12px -9px #888888;
+    animation: modalSearchFadein ease 0.3s;
+    z-index: 10;
+}
+
+@keyframes modalSearchFadein {
+    from {
+        transform: translateY(-44px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-inp-container {
+    width: 60%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
     }
 }
