@@ -6,7 +6,7 @@ import Voucher from '@/Pages/Admin/VouCher';
 import Order from '@/Pages/Admin/Order';
 import Product from '@/Pages/Admin/Product';
 import Category from '@/Pages/Admin/Category';
-
+import Shop from '@/Pages/User/Shop';
 //User
 import HomeUser from '@/Pages/User/HomeUser';
 import { DefaultLayoutUser } from '@/components/User/Layout';
@@ -22,6 +22,7 @@ const publicRoutes = [
     { path: '/admin/category', component: Category },
     //User
     { path: '/', component: HomeUser, layout: DefaultLayoutUser },
+    { path: '/shop', component: Shop, layout: DefaultLayoutUser },
 ];
 
 const privateRoutes = [];
