@@ -23,10 +23,11 @@ function DetailProduct(){
            { imglink: 'https://down-vn.img.susercontent.com/file/sg-11134201-22100-ojhnq7zs2biv9a',
                id: 6},
            { imglink: 'https://down-vn.img.susercontent.com/file/306d7edfefe6641ca68c03db05eb58f7',
-               id: 7}
+               id: 7},
+               { imglink: 'https://down-vn.img.susercontent.com/file/306d7edfefe6641ca68c03db05eb58f7',
+               id: 8}
        ])
     },[]);
-
     useEffect(() => {
         if (listimg.length > 0) {
             setImgFeature(listimg[indexListImg].imglink);
