@@ -7,20 +7,22 @@ import { useEffect, useRef, useState } from 'react';
 
 function Header() {
     const cx = classNames.bind({ ...styles, ...stylesModal });
-    const [stateSearch, setStateSearch] = useState(false);
+    const [stateSearch, setStateSearch] = useState(true);
 
     const modalRegister = useRef();
     const modalLogin = useRef();
     const modalSearch = useRef();
 
+
     const handleSearchModal = () => {
-        setStateSearch(!stateSearch);
         console.log(stateSearch);
         if (stateSearch) {
             modalSearch.current.style.display = 'flex';
         } else {
             modalSearch.current.style.display = 'none';
         }
+        setStateSearch(!stateSearch);
+
     };
     const handleRegister = () => {
         handleCloseLogin();
